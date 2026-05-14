@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/status-stable-brightgreen" alt="stable">
   <img src="https://img.shields.io/badge/language-中文-blue" alt="language">
-  <img src="https://img.shields.io/badge/platform-WorkBuddy-ff69b4" alt="platform">
+  <img src="https://img.shields.io/badge/platform-WorkBuddy%20|%20OpenClaw-ff69b4" alt="platform">
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="license">
 </p>
 
@@ -78,19 +78,66 @@
 
 ## 📦 安装方式
 
-### 方式一：导入 Skill 文件
+本 Skill 支持多种安装方式，适配不同的小龙虾客户端。
 
-1. 下载 `yale-child-potential-test.zip`
-2. 在 WorkBuddy 中导入该 Skill
-3. 开始使用（触发词见上）
+---
 
-### 方式二：手动安装
+### 🖱️ 方式一：图形界面拖拽安装（推荐新手）
 
-将 `yale-child-potential-test/` 文件夹放入 `~/.workbuddy/skills/` 目录：
+最简单的方法，零命令行操作：
+
+1. 下载本仓库的 ZIP（点绿色的 **Code → Download ZIP**），解压得到 `.skill` 文件
+2. 打开 WorkBuddy 客户端 → 右上角头像 → **Claw 设置** → **技能管理**
+3. 将 `.skill` 文件**直接拖入**窗口空白区域
+4. 系统自动校验并导入，显示绿色对勾 ✅ 即成功
+
+> 如果拖入的是 `.zip` 文件，也可在「添加技能」→「上传技能」中选择。
+
+---
+
+### 🖥️ 方式二：命令行安装（适合开发者）
+
+```bash
+# 校验技能包
+workbuddy skill validate /path/to/yale-child-potential-test.skill
+
+# 安装技能包
+workbuddy skill install /path/to/yale-child-potential-test.skill
+```
+
+支持 `--debug` 参数查看详细日志，也适合写脚本批量部署。
+
+---
+
+### 🏪 方式三：SkillHub 商店安装（需已上架）
+
+WorkBuddy 客户端 → 顶部导航栏 **技能市场** → 搜索「耶鲁大学孩子潜力测试」→ 点击「安装」。
+
+系统自动处理依赖和版本适配，无需手动下载文件。
+
+---
+
+### 🔄 方式四：OpenClaw 兼容模式导入
+
+如果你使用的是开源小龙虾（OpenClaw）生态的客户端：
+
+1. **Claw 设置** → **技能管理** → **更多** → 启用 **OpenClaw 兼容模式**
+2. 重启客户端使兼容层生效
+3. 使用方式一（拖拽）或方式二（命令行）导入即可
+
+> 若提示「MCP 插件未加载」，前往「扩展设置」中手动启用 **MCP 协议支持模块**。
+
+---
+
+### 📁 方式五：手动复制（极简方案）
+
+将仓库的 `SKILL.md` 所在文件夹放入技能目录：
 
 ```bash
 cp -r yale-child-potential-test ~/.workbuddy/skills/
 ```
+
+适用于熟悉文件系统的用户，复制即生效。
 
 ---
 
