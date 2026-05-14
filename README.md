@@ -1,4 +1,4 @@
-# 🧸 耶鲁大学孩子潜力测试 · Yale Child Potential Test
+# 🧸 耶鲁大学儿童潜能测试 · Yale Child Potential Test
 
 > **不考孩子，考的是家长的眼力。**
 >
