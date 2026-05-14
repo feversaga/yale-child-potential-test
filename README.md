@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/badge/language-中文-blue" alt="language">
   <img src="https://img.shields.io/badge/platform-WorkBuddy%20|%20OpenClaw-ff69b4" alt="platform">
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="license">
+  <a href="https://skillhub.cn/skills/yale-child-potential-test"><img src="https://img.shields.io/badge/SkillHub-已上架-8A2BE2" alt="skillhub"></a>
 </p>
 
 ---
@@ -50,10 +51,10 @@
 
 或者直接说：
 ```
-耶鲁大学孩子潜力测试  / 孩子天赋测试  / 宝宝潜力自测
+耶鲁大学儿童潜能测试  / 孩子天赋测试  / 宝宝潜力自测
 ```
 
-> 需要 [WorkBuddy](https://www.codebuddy.cn) 客户端，导入 Skill 即可使用。
+> 已上架 [SkillHub 商店](https://skillhub.cn/skills/yale-child-potential-test)，WorkBuddy 用户可直接在客户端一键安装，无需手动下载。
 
 ### 两种测试模式
 
@@ -82,9 +83,22 @@
 
 ---
 
-### 🖱️ 方式一：图形界面拖拽安装（推荐新手）
+### 🏪 方式一：SkillHub 商店一键安装（最推荐）
 
-最简单的方法，零命令行操作：
+已上架 SkillHub，一步搞定：
+
+1. 打开 WorkBuddy 客户端 → 顶部导航栏 **技能市场**
+2. 搜索 **耶鲁大学儿童潜能测试**
+3. 点击 **「安装」** 按钮
+4. 系统自动处理依赖，装好即用
+
+或者直接打开链接：**[skillhub.cn/skills/yale-child-potential-test](https://skillhub.cn/skills/yale-child-potential-test)**
+
+---
+
+### 🖱️ 方式二：图形界面拖拽安装
+
+零命令行操作：
 
 1. 下载本仓库的 ZIP（点绿色的 **Code → Download ZIP**），解压得到 `.skill` 文件
 2. 打开 WorkBuddy 客户端 → 右上角头像 → **Claw 设置** → **技能管理**
@@ -95,7 +109,7 @@
 
 ---
 
-### 🖥️ 方式二：命令行安装（适合开发者）
+### 🖥️ 方式三：命令行安装（适合开发者）
 
 ```bash
 # 校验技能包
@@ -109,21 +123,13 @@ workbuddy skill install /path/to/yale-child-potential-test.skill
 
 ---
 
-### 🏪 方式三：SkillHub 商店安装（需已上架）
-
-WorkBuddy 客户端 → 顶部导航栏 **技能市场** → 搜索「耶鲁大学孩子潜力测试」→ 点击「安装」。
-
-系统自动处理依赖和版本适配，无需手动下载文件。
-
----
-
 ### 🔄 方式四：OpenClaw 兼容模式导入
 
 如果你使用的是开源小龙虾（OpenClaw）生态的客户端：
 
 1. **Claw 设置** → **技能管理** → **更多** → 启用 **OpenClaw 兼容模式**
 2. 重启客户端使兼容层生效
-3. 使用方式一（拖拽）或方式二（命令行）导入即可
+3. 使用方式二（拖拽）或方式三（命令行）导入即可
 
 > 若提示「MCP 插件未加载」，前往「扩展设置」中手动启用 **MCP 协议支持模块**。
 
