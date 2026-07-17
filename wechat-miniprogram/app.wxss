@@ -42,11 +42,12 @@ page {
   background: var(--primary);
   color: #fff;
   border-radius: 999rpx;
-  padding: 24rpx 0;
+  padding: 24rpx 32rpx;
   text-align: center;
   font-weight: 600;
-  font-size: 30rpx;
+  font-size: 28rpx;
   border: none;
+  white-space: nowrap;
 }
 
 .btn-ghost {
@@ -54,10 +55,11 @@ page {
   color: var(--primary);
   border: 2rpx solid var(--primary);
   border-radius: 999rpx;
-  padding: 24rpx 0;
+  padding: 24rpx 32rpx;
   text-align: center;
   font-weight: 600;
-  font-size: 30rpx;
+  font-size: 28rpx;
+  white-space: nowrap;
 }
 
 .muted {
