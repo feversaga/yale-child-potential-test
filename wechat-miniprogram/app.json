@@ -7,10 +7,10 @@
     "pages/history/history"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ff69b4",
+    "navigationBarBackgroundColor": "#3a7afe",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "儿童潜能测试Pro",
-    "backgroundColor": "#fef6fb",
+    "backgroundColor": "#f4f8ff",
     "backgroundTextStyle": "light"
   },
   "style": "v2",

@@ -1,5 +1,5 @@
 /* pages/result/result.wxss */
-.hero { background: linear-gradient(135deg, #fff0f8, #ffe0f0); text-align: center; }
+.hero { background: linear-gradient(135deg, #eef4ff, #dcebff); text-align: center; }
 .saved-tip { font-size: 24rpx; color: #2ecc71; margin-top: 8rpx; }
 .field-label { font-weight: 600; margin-bottom: 16rpx; }
 .rank-row {
@@ -10,18 +10,18 @@
 }
 .rank-medal { width: 56rpx; text-align: center; font-size: 32rpx; }
 .rank-name { flex: 1; font-size: 28rpx; }
-.rank-score { color: #ff69b4; font-weight: 700; }
+.rank-score { color: #3a7afe; font-weight: 700; }
 .detail-head { font-size: 32rpx; font-weight: 700; }
-.detail-score { color: #ff69b4; font-weight: 700; margin: 6rpx 0 12rpx; }
+.detail-score { color: #3a7afe; font-weight: 700; margin: 6rpx 0 12rpx; }
 .detail-text { font-size: 27rpx; line-height: 1.7; color: #444; }
 .detail-sub { font-weight: 600; margin: 20rpx 0 10rpx; font-size: 27rpx; }
 .careers { display: flex; flex-wrap: wrap; gap: 12rpx; }
 .career {
-  background: #fff0f8;
-  color: #ff69b4;
+  background: #eef4ff;
+  color: #3a7afe;
   font-size: 24rpx;
   padding: 8rpx 18rpx;
   border-radius: 999rpx;
 }
 .tip-item { font-size: 26rpx; color: #555; line-height: 1.8; }
-.note { background: #fffaf0; font-size: 26rpx; color: #777; line-height: 1.7; }
+.note { background: #f0f7ff; font-size: 26rpx; color: #777; line-height: 1.7; }

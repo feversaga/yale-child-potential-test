@@ -16,7 +16,6 @@ function computeResult(scores) {
 // 根据分数生成差异化解读文本
 function buildNarrative(dim, rank, gender) {
   const pronoun = gender === 'girl' ? '她' : gender === 'boy' ? '他' : '孩子';
-  constpron = gender === 'girl' ? '她' : gender === 'boy' ? '他' : '孩子';
   const medal = rank === 0 ? '🥇' : rank === 1 ? '🥈' : '🥉';
 
   // 分数区间描述

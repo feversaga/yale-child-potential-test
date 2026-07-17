@@ -1,8 +1,8 @@
 /* app.wxss 全局样式 */
 page {
-  --primary: #ff69b4;
-  --primary-light: #ffd6ec;
-  --bg: #fef6fb;
+  --primary: #3a7afe;
+  --primary-light: #cfe0ff;
+  --bg: #f4f8ff;
   --card: #ffffff;
   --text: #333333;
   --text-sub: #888888;
@@ -23,7 +23,7 @@ page {
   border-radius: 24rpx;
   padding: 32rpx;
   margin-bottom: 24rpx;
-  box-shadow: 0 8rpx 24rpx rgba(255, 105, 180, 0.08);
+  box-shadow: 0 8rpx 24rpx rgba(58, 122, 254, 0.08);
 }
 
 .title {

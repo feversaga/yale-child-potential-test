@@ -1,7 +1,7 @@
 /* pages/index/index.wxss */
 .hero {
   text-align: center;
-  background: linear-gradient(135deg, #fff0f8, #ffe0f0);
+  background: linear-gradient(135deg, #eef4ff, #dcebff);
 }
 .hero-emoji {
   font-size: 80rpx;
@@ -32,8 +32,8 @@
   border: 2rpx solid transparent;
 }
 .gender-opt.active {
-  background: #fff0f8;
-  border-color: #ff69b4;
-  color: #ff69b4;
+  background: #eef4ff;
+  border-color: #3a7afe;
+  color: #3a7afe;
   font-weight: 600;
 }

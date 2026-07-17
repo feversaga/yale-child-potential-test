@@ -24,11 +24,24 @@ Page({
   },
 
   choose(e) {
+    if (this._advancing) return;
     const value = Number(e.currentTarget.dataset.v);
     const qid = this.data.list[this.data.current].id;
     const scores = { ...this.data.scores, [qid]: value };
     app.globalData.scores = scores;
     this.setData({ scores, selected: value });
+
+    // 选中后短暂高亮再自动进入下一题（最后一题自动出结果）
+    this._advancing = true;
+    wx.showToast({ title: '已记录', icon: 'success', duration: 300 });
+    setTimeout(() => {
+      this._advancing = false;
+      if (this.data.current < this.data.total - 1) {
+        this.setData({ current: this.data.current + 1 }, () => this.refreshSelected());
+      } else {
+        this.finish();
+      }
+    }, 450);
   },
 
   prev() {

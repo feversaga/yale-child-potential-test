@@ -8,19 +8,19 @@
 }
 .bar {
   height: 12rpx;
-  background: #ffe0f0;
+  background: #dcebff;
   border-radius: 999rpx;
   overflow: hidden;
   margin-top: 10rpx;
 }
 .bar-inner {
   height: 100%;
-  background: #ff69b4;
+  background: #3a7afe;
   border-radius: 999rpx;
   transition: width 0.3s;
 }
 .q-card {
-  background: linear-gradient(135deg, #fff0f8, #ffe0f0);
+  background: linear-gradient(135deg, #eef4ff, #dcebff);
 }
 .q-text {
   font-size: 34rpx;
@@ -45,11 +45,11 @@
   border: 2rpx solid transparent;
 }
 .opt-active {
-  background: #fff0f8;
-  border-color: #ff69b4;
+  background: #eef4ff;
+  border-color: #3a7afe;
 }
 .opt-color { font-size: 36rpx; }
-.opt-val { font-size: 24rpx; font-weight: 700; color: #ff69b4; }
+.opt-val { font-size: 24rpx; font-weight: 700; color: #3a7afe; }
 .opt-label { font-size: 20rpx; color: #888; }
 .nav-row {
   display: flex;
