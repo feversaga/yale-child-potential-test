@@ -19,9 +19,15 @@
 
   <view class="card">
     <view class="field-label">选择测试模式</view>
-    <button class="btn" bindtap="startFull">🌟 完整模式（20 题逐题打分）</button>
+    <button class="btn" bindtap="startFull">
+      <view class="btn-title">🌟 完整模式</view>
+      <view class="btn-desc">20 题逐题打分</view>
+    </button>
     <view style="height:20rpx"></view>
-    <button class="btn-ghost" bindtap="startQuick">⚡ 快速模式（勾选最像的 3 项）</button>
+    <button class="btn-ghost" bindtap="startQuick">
+      <view class="btn-title">⚡ 快速模式</view>
+      <view class="btn-desc">勾选最像的 3 项</view>
+    </button>
   </view>
 
   <view class="card" wx:if="{{cloudEnabled}}">

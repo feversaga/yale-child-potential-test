@@ -37,3 +37,5 @@
   color: #3a7afe;
   font-weight: 600;
 }
+.btn-title { font-size: 30rpx; line-height: 1.4; }
+.btn-desc { font-size: 22rpx; opacity: 0.85; margin-top: 4rpx; }
