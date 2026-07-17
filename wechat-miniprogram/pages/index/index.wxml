@@ -2,7 +2,7 @@
 <view class="container">
   <view class="card hero">
     <view class="hero-emoji">🧸</view>
-    <view class="title">耶鲁大学儿童潜能测试</view>
+    <view class="title">儿童潜能测试Pro</view>
     <view class="subtitle">不考孩子，考的是家长的眼力。通过观察日常 20 种行为，发现孩子藏在哪里的天赋。</view>
   </view>
 
@@ -29,6 +29,6 @@
   </view>
 
   <view class="muted" style="text-align:center;margin-top:12rpx">
-    基于耶鲁大学罗伯特·斯滕伯格教授的儿童潜力评估理论
+    基于罗伯特·斯滕伯格教授的儿童潜力评估理论
   </view>
 </view>

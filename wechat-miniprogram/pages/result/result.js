@@ -44,7 +44,7 @@ Page({
 
   copyResult() {
     const r = this.data.report;
-    let text = `耶鲁儿童潜能测试结果\n`;
+    let text = `儿童潜能测试Pro结果\n`;
     if (r.childInfo && r.childInfo.age) text += `孩子年龄：${r.childInfo.age}\n`;
     text += `\n维度得分排名：\n`;
     r.ranked.forEach((d, i) => {

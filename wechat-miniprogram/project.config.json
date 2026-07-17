@@ -1,7 +1,7 @@
 {
   "appid": "wx12cd16431b00986d",
   "projectname": "yale-child-potential-miniprogram",
-  "description": "耶鲁大学儿童潜能测试微信小程序",
+  "description": "儿童潜能测试Pro 微信小程序",
   "miniprogramRoot": "./",
   "compileType": "miniprogram",
   "libVersion": "latest",
