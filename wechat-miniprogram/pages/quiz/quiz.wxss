@@ -1,0 +1,60 @@
+/* pages/quiz/quiz.wxss */
+.progress {
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+  color: #888;
+  margin-bottom: 16rpx;
+}
+.bar {
+  height: 12rpx;
+  background: #ffe0f0;
+  border-radius: 999rpx;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+.bar-inner {
+  height: 100%;
+  background: #ff69b4;
+  border-radius: 999rpx;
+  transition: width 0.3s;
+}
+.q-card {
+  background: linear-gradient(135deg, #fff0f8, #ffe0f0);
+}
+.q-text {
+  font-size: 34rpx;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.opt-title {
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  gap: 12rpx;
+}
+.opt {
+  flex: 1;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 16rpx;
+  padding: 16rpx 4rpx;
+  border: 2rpx solid transparent;
+}
+.opt-active {
+  background: #fff0f8;
+  border-color: #ff69b4;
+}
+.opt-color { font-size: 36rpx; }
+.opt-val { font-size: 24rpx; font-weight: 700; color: #ff69b4; }
+.opt-label { font-size: 20rpx; color: #888; }
+.nav-row {
+  display: flex;
+  gap: 20rpx;
+  margin-top: 8rpx;
+}
+.nav-btn { flex: 1; }
+.half { flex: 2; }

@@ -1,0 +1,40 @@
+/* pages/quick/quick.wxss */
+.tip { background: linear-gradient(135deg, #fff0f8, #ffe0f0); }
+.tip-title { font-weight: 700; font-size: 32rpx; margin-bottom: 8rpx; }
+.hl { color: #ff69b4; font-weight: 700; }
+.item {
+  display: flex;
+  align-items: center;
+  padding: 22rpx 16rpx;
+  border-radius: 16rpx;
+  background: #fafafa;
+  margin-bottom: 14rpx;
+  border: 2rpx solid transparent;
+}
+.item-on {
+  background: #fff0f8;
+  border-color: #ff69b4;
+}
+.item-no {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  background: #ffe0f0;
+  color: #ff69b4;
+  font-weight: 700;
+  text-align: center;
+  line-height: 56rpx;
+  flex-shrink: 0;
+  margin-right: 18rpx;
+}
+.item-text {
+  flex: 1;
+  font-size: 27rpx;
+  line-height: 1.5;
+}
+.item-check {
+  width: 40rpx;
+  text-align: center;
+  color: #ff69b4;
+  font-weight: 700;
+}

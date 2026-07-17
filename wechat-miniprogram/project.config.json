@@ -1,0 +1,17 @@
+{
+  "appid": "touristappid",
+  "projectname": "yale-child-potential-miniprogram",
+  "description": "耶鲁大学儿童潜能测试微信小程序",
+  "miniprogramRoot": "./",
+  "compileType": "miniprogram",
+  "libVersion": "latest",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true
+  },
+  "condition": {}
+}

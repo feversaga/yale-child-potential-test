@@ -1,0 +1,23 @@
+<!-- pages/quick/quick.wxml -->
+<view class="container">
+  <view class="card tip">
+    <view class="tip-title">⚡ 快速模式</view>
+    <view class="muted">从下面 20 个表现中，勾选孩子最像的 <text class="hl">3 个</text>。已选 {{picked.length}}/3</view>
+  </view>
+
+  <view class="card">
+    <view
+      wx:for="{{list}}"
+      wx:key="id"
+      class="item {{picked.indexOf(item.id)>=0?'item-on':''}}"
+      data-id="{{item.id}}"
+      bindtap="toggle"
+    >
+      <view class="item-no">{{item.id}}</view>
+      <view class="item-text">{{item.text}}</view>
+      <view class="item-check">{{picked.indexOf(item.id)>=0 ? '✓' : ''}}</view>
+    </view>
+  </view>
+
+  <button class="btn" bindtap="finish">查看结果</button>
+</view>

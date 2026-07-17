@@ -194,6 +194,18 @@ cp -r yale-child-potential-test ~/.workbuddy/skills/
 
 ---
 
+## 📱 微信小程序版
+
+不想开电脑？我们把它做成了**微信小程序**，家长在手机上就能给孩子测。
+
+- 🌟 完整模式（20 题逐题打分）+ ⚡ 快速模式（勾选 3 项）
+- 📊 自动生成 6 大天赋维度排名与培养建议
+- ☁️ 可选云端保存历史记录
+
+👉 源码与运行说明见 **[`wechat-miniprogram/`](./wechat-miniprogram/README.md)**
+
+---
+
 ## 📄 License
 
 MIT

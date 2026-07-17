@@ -1,0 +1,34 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <view class="card hero">
+    <view class="hero-emoji">🧸</view>
+    <view class="title">耶鲁大学儿童潜能测试</view>
+    <view class="subtitle">不考孩子，考的是家长的眼力。通过观察日常 20 种行为，发现孩子藏在哪里的天赋。</view>
+  </view>
+
+  <view class="card">
+    <view class="field-label">孩子年龄</view>
+    <input class="age-input" type="number" placeholder="如：10" value="{{age}}" bindinput="onAgeInput" />
+
+    <view class="field-label">孩子性别</view>
+    <view class="gender-row">
+      <view class="gender-opt {{gender==='boy'?'active':''}}" data-g="boy" bindtap="onGenderChange">👦 男孩</view>
+      <view class="gender-opt {{gender==='girl'?'active':''}}" data-g="girl" bindtap="onGenderChange">👧 女孩</view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="field-label">选择测试模式</view>
+    <button class="btn" bindtap="startFull">🌟 完整模式（20 题逐题打分）</button>
+    <view style="height:20rpx"></view>
+    <button class="btn-ghost" bindtap="startQuick">⚡ 快速模式（勾选最像的 3 项）</button>
+  </view>
+
+  <view class="card" wx:if="{{cloudEnabled}}">
+    <button class="btn-ghost" bindtap="goHistory">📂 查看历史评测记录</button>
+  </view>
+
+  <view class="muted" style="text-align:center;margin-top:12rpx">
+    基于耶鲁大学罗伯特·斯滕伯格教授的儿童潜力评估理论
+  </view>
+</view>

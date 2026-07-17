@@ -1,0 +1,18 @@
+<!-- pages/history/history.wxml -->
+<view class="container">
+  <view class="card" wx:if="{{loading}}">
+    <view class="muted">加载中...</view>
+  </view>
+
+  <view class="card" wx:if="{{!loading && list.length===0}}">
+    <view class="muted">还没有评测记录。去首页给孩子测一次吧～</view>
+  </view>
+
+  <view class="card record" wx:for="{{list}}" wx:key="_id" data-id="{{item._id}}" bindtap="viewDetail">
+    <view class="rec-top">
+      <text class="rec-age">👶 {{item.age}} 岁</text>
+      <text class="rec-time">{{item._id}}</text>
+    </view>
+    <view class="rec-top1">{{item.top1}}</view>
+  </view>
+</view>

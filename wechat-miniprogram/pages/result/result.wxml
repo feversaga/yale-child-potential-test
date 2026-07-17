@@ -1,0 +1,42 @@
+<!-- pages/result/result.wxml -->
+<view class="container" wx:if="{{report}}">
+  <view class="card hero">
+    <view class="title">🎯 测试结果报告</view>
+    <view class="subtitle" wx:if="{{report.childInfo.age}}">孩子年龄：{{report.childInfo.age}} 岁</view>
+    <view class="subtitle" wx:else>未填写年龄</view>
+    <view class="saved-tip" wx:if="{{saved}}">✅ 已保存到云端历史</view>
+  </view>
+
+  <!-- 维度排名 -->
+  <view class="card">
+    <view class="field-label">维度得分排名</view>
+    <view class="rank-row" wx:for="{{report.ranked}}" wx:key="key">
+      <text class="rank-medal">{{index===0?'🥇':index===1?'🥈':index===2?'🥉':'　'}}</text>
+      <text class="rank-name">{{item.emoji}} {{item.name}}</text>
+      <text class="rank-score">{{item.score}}/{{item.max}}</text>
+    </view>
+  </view>
+
+  <!-- 前 3 名详细解读 -->
+  <view class="card detail" wx:for="{{report.top3}}" wx:key="name">
+    <view class="detail-head">{{item.medal}} 第{{index+1}}名：{{item.emoji}}{{item.name}}</view>
+    <view class="detail-score">{{item.score}} / {{item.max}} 分</view>
+    <view class="detail-text">{{item.intro}}{{item.detail}}</view>
+
+    <view class="detail-sub">适合发展方向</view>
+    <view class="careers">
+      <text class="career" wx:for="{{item.careers}}" wx:for-item="c" wx:key="*this">{{c}}</text>
+    </view>
+
+    <view class="detail-sub">日常培养建议</view>
+    <view class="tip-item" wx:for="{{item.tips}}" wx:for-item="t" wx:key="*this">· {{t}}</view>
+  </view>
+
+  <view class="card note">
+    💡 温馨提示：这份测试只是一个参考方向。最好的教育不是“补短”，而是“扬长”——在孩子有天赋的方向上多浇灌，让他成为最好的自己。
+  </view>
+
+  <button class="btn" bindtap="copyResult">📋 复制结果</button>
+  <view style="height:16rpx"></view>
+  <button class="btn-ghost" bindtap="retest">🔄 再测一个孩子</button>
+</view>

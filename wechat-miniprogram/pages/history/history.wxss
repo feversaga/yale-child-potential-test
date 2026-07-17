@@ -1,0 +1,11 @@
+/* pages/history/history.wxss */
+.record { padding: 24rpx 28rpx; }
+.rec-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rpx;
+}
+.rec-age { font-weight: 700; font-size: 28rpx; }
+.rec-time { font-size: 22rpx; color: #bbb; }
+.rec-top1 { font-size: 26rpx; color: #ff69b4; font-weight: 600; }
